@@ -1,0 +1,11 @@
+<div class="col-sm-12">
+	<div class="console-title console-title-border clearfix">
+		<div class="pull-left">
+			<h5>jenkins构建环境版本监控</h5>
+		</div>
+	</div>
+	<div class="clearfix simple-form margin-top-3">
+		<div simple-form name="searchBar" result="vm.formData" options="vm.formOptions" on-submit="vm.onSubmit" fields="vm.formFields" class="inline-block"></div>
+	</div>
+	<div   simple-grid columns="vm.columns" store="vm.itemList" loading-state="vm.loading" render-table="vm.updateModel()" pagination-info="vm.pageInfo" config="vm.config"></div>
+</div>

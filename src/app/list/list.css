@@ -1,0 +1,71 @@
+.form-control-wrap {
+	display: inline-block;
+}
+.inline-block {
+	display: inline-block !important;
+}
+.inline-block .simple-form-field {
+
+	/*display: inline-block*/
+	float: left;
+}
+.margin-top-3 {
+	margin-top: 24px;
+}
+.margin-top-2 {
+	margin-top: 16px;
+}
+.margin-top-1 {
+	margin-top: 8px;
+}
+.new-layout-container {
+	margin-top: 40px;
+}
+.simple-form {
+	line-height: 34px;
+}
+.padding-clear {
+	padding: 0 !important;
+}
+.console-title {
+	padding: 16px 0;
+	min-height: 60px;
+}
+.console-title-border {
+	border-bottom: 1px solid #DDD;
+}
+.console-title h1, .console-title h2, .console-title h3, .console-title h4, .console-title h5, .console-title h6 {
+	display: inline-block;
+	text-indent: 8px;
+	border-left: 2px solid #337AB7;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-right: 8px;
+}
+.content {
+	width: 85.5%;
+	float: left;
+	padding: 0 1%;
+}
+.nav-sidebar {
+	width: 13%;
+	float: left;
+	min-width: 200px;
+}
+.nav-sidebar  .js-siderbar {
+	position: static;
+	width: 100%;
+}
+.nav-sidebar  .js-siderbar li {
+	padding-left: 10%;
+}
+.js-contanier {
+	min-width: 1440px;
+}
+.mw80{
+	width: 80%;
+	max-width: 1000px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	word-break: break-all;
+}

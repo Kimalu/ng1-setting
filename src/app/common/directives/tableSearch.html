@@ -1,0 +1,18 @@
+<div ng-if="showDropdown" uib-dropdown class="dropdown" >
+	<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+		<span ng-transclude></span>
+		<span uib-dropdown-toggle>
+			{{selectItem.selectedText? selectItem.selectedText :'('+selectItem.text+')'}}
+		</span>
+		<span class="caret"></span>
+	</a>
+	<ul class="dropdown-menu bsz-console-table-search-list " >
+		<li ng-repeat="item in items">
+			<a href="javascript:" ng-click="search(item)" bsz-console-spm spm-id="{{spmPrefix}}{{$index+1}}">
+				<span class="icon-yes" ng-if="selectItem == item"></span>
+				<span>{{item.text}}</span>
+			</a>
+		</li>
+	</ul>
+</div>
+<span ng-if="!showDropdown" ng-transclude></span>

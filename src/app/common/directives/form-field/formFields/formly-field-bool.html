@@ -1,0 +1,20 @@
+<label for="{{id}}" class="al-lab">
+	<span ng-bind-html="options.label |to_trusted" title="{{options.label  | to_trusted}}"></span>
+</label>
+<!-- <div>
+	<label data-ng-class="{'on':result[options.key]=='true'}"  class="al-ui-switch">
+		<input type="checkbox" data-ng-model="result[options.key]" class="dn" ng-true-value="'true'" ng-false-value="'false'">
+	</label>
+</div> -->
+<div class="al-ui-select" uib-dropdown>
+	
+		<a href="javascript:;" class="key" uib-dropdown-toggle >
+			{{result[options.key]=='true' ?'开启':result[options.key]=='false'?'关闭':''}}
+		</a>
+		<ul class="list" class="dropdown-menu" uib-dropdown-menu  bool-dlg ng-model="result[options.key]">
+			<li class="option" data-ng-click="result[options.key]=''" ng-class="{'checked':!result[options.key]}"></li>
+			<li class="option" data-ng-click="result[options.key]='true'" ng-class="{'checked':result[options.key]=='true'}">开启</li>
+			<li class="option"  data-ng-click="result[options.key]='false'" ng-class="{'checked':result[options.key]=='false'}">关闭</li>
+		</ul>
+</div>
+

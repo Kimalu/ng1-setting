@@ -1,0 +1,9 @@
+<label for="{{id}}" class="al-lab">
+	<span ng-bind-html="options.label | to_trusted" title="{{options.tip  | to_trusted}}"></span>
+</label>
+<!-- <div ng-model="result[options.key]" class="">{{result[options.key]|evt_name}}</div>
+<span class="al-btn" form-result="result[options.key]" items="options.options" event-dlg>...</span> -->
+<div class="al-ui-ipt-item" ng-model="result[options.key]">
+	<input type="text" value="{{result[options.key]|evt_name}}" readonly/>
+	<span class="al-btn" form-result="result[options.key]" items="::options.options" event-dlg>...</span>
+</div>

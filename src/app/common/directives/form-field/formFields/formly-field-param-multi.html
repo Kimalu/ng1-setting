@@ -1,0 +1,9 @@
+<label for="{{id}}" class="al-lab">
+	<span ng-bind-html="options.label | to_trusted" title="{{options.tip  | to_trusted}}"></span>
+</label>
+<!-- <span ng-model="result[options.key]" class="">{{result[sortIndex][options.key]|json}}</span>
+<span class="al-btn" items="result[sortIndex][options.key]" param-dlg>...</span> -->
+<div ng-model="result[sortIndex][options.key]" class="al-ui-ipt-item">
+	<input type="text" value="{{result[sortIndex][options.key]|json}}" readonly>
+	<span class="al-btn" items="result[sortIndex][options.key]" param-dlg>...</span>
+</div>

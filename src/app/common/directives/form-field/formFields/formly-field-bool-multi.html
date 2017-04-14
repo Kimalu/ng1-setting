@@ -1,0 +1,31 @@
+<label for="{{id}}" class="al-lab">
+	<span ng-bind-html="options.label  | to_trusted" uib-tooltip='{{options.tip||options.label  | to_trusted}}'  tooltip-placement="left"></span>
+	<!-- title="{{options.tip  | to_trusted}}"  -->
+</label>
+
+<div class="al-ui-select" uib-dropdown>
+		<a href="javascript:;" class="key" uib-dropdown-toggle >
+			{{result[sortIndex][options.key]=='true' ?'开启':result[sortIndex][options.key]=='false'?'关闭':''}}
+		</a>
+		<ul class="list" class="dropdown-menu" uib-dropdown-menu  bool-dlg ng-model="result[options.key]">
+			<li class="option" data-ng-click="result[sortIndex][options.key]=''" ng-class="{'checked':!result[sortIndex][options.key]}"></li>
+			<li class="option" data-ng-click="result[sortIndex][options.key]='true'" ng-class="{'checked':result[sortIndex][options.key]=='true'}">开启</li>
+			<li class="option"  data-ng-click="result[sortIndex][options.key]='false'" ng-class="{'checked':result[sortIndex][options.key]=='false'}">关闭</li>
+		</ul>
+</div>
+
+<!-- <div>
+	<label data-ng-class="{'on':result[sortIndex][options.key]=='true'||result[sortIndex][options.key]==true}"  class="al-ui-switch" for="{{sortIndex}}-{{options.key}}">
+		<input type="checkbox" data-ng-model="result[sortIndex][options.key]" class="dn" ng-true-value="'true'" ng-false-value="'false'" id="{{sortIndex}}-{{options.key}}">
+	</label>
+</div> -->
+<!-- <div class="al-ui-select" uib-dropdown> -->
+
+<!-- 	<a href="javascript:;" class="key" uib-dropdown-toggle>
+	{{result[sortIndex][options.key] ?'开启':'关闭'}}
+</a>
+<ul class="list" class="dropdown-menu" uib-dropdown-menu ng-model="result[sortIndex][options.key]" bool-dlg>
+	<li class="option" data-ng-click="result[options.key]=!0" ng-class="{'checked':result[sortIndex][options.key]}">开启</li>
+	<li class="option"  data-ng-click="result[options.key]=!1" ng-class="{'checked':!result[sortIndex][options.key]}">关闭</li>
+</ul> -->
+<!-- </div> -->

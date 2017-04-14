@@ -1,0 +1,2 @@
+<span ng-bind-html="options.label | to_trusted" class="al-lab" title="{{options.tip||options.label | to_trusted}}" ></span>
+<input type="text" class="al-ui-ipt"  formly-dynamic-name="options.key" placeholder="{{options.placeholder}}" ng-required="options.required" ng-disabled="options.disabled" ng-model="result[options.key || index]" string-to-number>

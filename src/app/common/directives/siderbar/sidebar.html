@@ -1,0 +1,11 @@
+<div>
+	<ul class="js-siderbar" ng-if="!loadingState" >
+		<li class="js-border-top"> <h3><a  class="iconfont" title="返回editor编辑器">{{navTitle}} <i class="icon-back"></i></a></h3></li>
+	    <li data-ng-repeat="item in products" ui-sref-active="js-active">
+	    	<a  ui-sref="{{item.url}}" title="{{item.title}}" >
+	    	{{item.title}}
+	    	</a>
+	    </li>
+	</ul>
+	<div class="sidebar-loading" ng-if="loadingState"></div>
+</div>

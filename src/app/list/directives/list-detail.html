@@ -1,0 +1,16 @@
+<div bindonce>
+	<div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" data-ng-click="close(false)" aria-hidden="true">&times;</button>
+		<h5 class="modal-title">{{dialogTitle}}</h5>
+	</div>
+	<div class="modal-body">
+		<form>
+			<div class="form-group">
+				<textarea data-ng-bind="detail" readonly class="col-sm-12" rows="15"></textarea>
+			</div>
+			</form>
+	</div>
+	<div class="modal-footer">
+		<!-- <button class="btn btn-default" data-ng-click="close(false)" >取消</button> -->
+	</div>
+</div>

@@ -1,0 +1,188 @@
+{
+  "content": [
+    {
+      "id": "58eaefa745ceb3b99027931e",
+      "group": "",
+      "artifact": "",
+      "version": "",
+      "enable": 1,
+      "type": "android",
+      "list_type": 0,
+      "operation_time": 1491791783122,
+      "nd_produce": 1
+    },
+    {
+      "id": "578dcbba45ce675572ea7fc7",
+      "group": "",
+      "artifact": "*",
+      "version": "*-DEBUG",
+      "enable": 1,
+      "type": "ios",
+      "list_type": 1,
+      "operation_time": 1468910522414,
+      "nd_produce": 0
+    },
+    {
+      "id": "57864a6945ced8d7ba707af7",
+      "group": "",
+      "artifact": "*",
+      "version": "*-TEST",
+      "enable": 1,
+      "type": "ios",
+      "list_type": 1,
+      "operation_time": 1468418665719,
+      "nd_produce": 0
+    },
+    {
+      "id": "58efa085e4b09633773c28d3",
+      "group": "",
+      "artifact": "AEAAComponent",
+      "version": "*",
+      "enable": 1,
+      "type": "ios",
+      "list_type": 0,
+      "operation_time": 1492099205503,
+      "nd_produce": 1
+    },
+    {
+      "id": "57863433288eee7061902a33",
+      "group": "",
+      "artifact": "AFNetworking",
+      "version": "2.5.4",
+      "enable": 1,
+      "type": "ios",
+      "list_type": 0,
+      "operation_time": 0,
+      "nd_produce": 0
+    },
+    {
+      "id": "57863433288eee7061902a34",
+      "group": "",
+      "artifact": "AFViewShaker",
+      "version": "0.0.2",
+      "enable": 1,
+      "type": "ios",
+      "list_type": 0,
+      "operation_time": 0,
+      "nd_produce": 0
+    },
+    {
+      "id": "57863433288eee7061902a35",
+      "group": "",
+      "artifact": "AMap2DMap",
+      "version": "3.2.0",
+      "enable": 1,
+      "type": "ios",
+      "list_type": 0,
+      "operation_time": 0,
+      "nd_produce": 0
+    },
+    {
+      "id": "57863433288eee7061902a36",
+      "group": "",
+      "artifact": "AMapSearch",
+      "version": "3.1.0",
+      "enable": 1,
+      "type": "ios",
+      "list_type": 0,
+      "operation_time": 0,
+      "nd_produce": 0
+    },
+    {
+      "id": "58efa084e4b09633773c27f0",
+      "group": "",
+      "artifact": "APFCompatibleKit",
+      "version": "*",
+      "enable": 1,
+      "type": "ios",
+      "list_type": 0,
+      "operation_time": 1492099204794,
+      "nd_produce": 1
+    },
+    {
+      "id": "58efa085e4b09633773c288a",
+      "group": "",
+      "artifact": "APFContentProvider",
+      "version": "*",
+      "enable": 1,
+      "type": "ios",
+      "list_type": 0,
+      "operation_time": 1492099205293,
+      "nd_produce": 1
+    },
+    {
+      "id": "58efa084e4b09633773c2787",
+      "group": "",
+      "artifact": "APFExceptionCollectionComponent",
+      "version": "*",
+      "enable": 1,
+      "type": "ios",
+      "list_type": 0,
+      "operation_time": 1492099204431,
+      "nd_produce": 1
+    },
+    {
+      "id": "58efa084e4b09633773c2723",
+      "group": "",
+      "artifact": "APFExceptionCollectionSDK",
+      "version": "*",
+      "enable": 1,
+      "type": "ios",
+      "list_type": 0,
+      "operation_time": 1492099204136,
+      "nd_produce": 1
+    },
+    {
+      "id": "58efa085e4b09633773c2875",
+      "group": "",
+      "artifact": "APFJavascriptSDKComponent",
+      "version": "*",
+      "enable": 1,
+      "type": "ios",
+      "list_type": 0,
+      "operation_time": 1492099205211,
+      "nd_produce": 1
+    },
+    {
+      "id": "58efa085e4b09633773c28f6",
+      "group": "",
+      "artifact": "APFKit",
+      "version": "*",
+      "enable": 1,
+      "type": "ios",
+      "list_type": 0,
+      "operation_time": 1492099205616,
+      "nd_produce": 1
+    },
+    {
+      "id": "58efa085e4b09633773c2856",
+      "group": "",
+      "artifact": "APFLauncherComponent",
+      "version": "*",
+      "enable": 1,
+      "type": "ios",
+      "list_type": 0,
+      "operation_time": 1492099205109,
+      "nd_produce": 1
+    },
+    {
+      "id": "58efa084e4b09633773c2808",
+      "group": "",
+      "artifact": "APFMainComponent",
+      "version": "*",
+      "enable": 1,
+      "type": "ios",
+      "list_type": 0,
+      "operation_time": 1492099204867,
+      "nd_produce": 1
+    }
+  ],
+  "last": false,
+  "total_pages": 74,
+  "total_elements": 1174,
+  "sort": null,
+  "number_of_elements": 16,
+  "first": false,
+  "size": 16,
+  "number": 1
+}

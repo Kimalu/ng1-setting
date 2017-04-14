@@ -1,0 +1,11 @@
+<label for="{{id}}" class="al-lab">
+	<span ng-bind-html="options.label | to_trusted" title="{{options.tip||options.label}}"></span>
+</label>
+<!-- <div class="al-ui-select">
+	<select class="key" id="{{id}}" formly-dynamic-name="options.key" formly-custom-validation="options.validators" ng-model="result[sortIndex][options.key]" ng-required="options.required" ng-disabled="options.disabled" ng-options="option.value as option.name group by option.group for option in options.options"></select>
+</div> -->
+<div class="al-ui-ipt-item" ng-model="result[sortIndex][options.key]">
+	<input type="text" value="{{options.options|select_name:result[sortIndex][options.key]}}" readonly>
+	<span class="al-btn ng-isolate-scope" form-result="result[sortIndex][options.key]" items="::options.options" select-dlg>...</span>
+	
+</div>

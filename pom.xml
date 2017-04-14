@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.nd.sdp</groupId>
+    <artifactId>sdp-web-parent</artifactId>
+    <version>0.7.0</version>
+  </parent>
+  <groupId>com.nd.share.app.portal.editor</groupId>
+  <artifactId>app-portal-editor</artifactId>
+  <packaging>war</packaging>
+  <version>0.1.32</version>
+  <name>应用门户-编辑器</name>
+  <dependencies>
+  </dependencies>
+
+  <build>
+    <plugins>
+      
+
+      <!--<plugin>-->
+        <!--<groupId>com.github.eirslett</groupId>-->
+        <!--<artifactId>frontend-maven-plugin</artifactId>-->
+        <!--<version>0.0.26</version>-->
+        <!--<configuration>-->
+          <!--<workingDirectory>.</workingDirectory>-->
+        <!--</configuration>-->
+        <!--<executions>-->
+          <!--<execution>-->
+            <!--<id>install node and npm</id>-->
+            <!--<goals>-->
+              <!--<goal>install-node-and-npm</goal>-->
+            <!--</goals>-->
+            <!--<configuration>-->
+              <!--<nodeVersion>v5.3.0</nodeVersion>-->
+              <!--<npmVersion>3.3.12</npmVersion>-->
+              <!--&lt;!&ndash; <nodeDownloadRoot>http://sdpcs.dev.web.nd/v0.1/static/dev_content_app_native_app/</nodeDownloadRoot>-->
+               <!--<npmDownloadRoot>http://sdpcs.dev.web.nd/v0.1/static/dev_content_app_native_app/npm/</npmDownloadRoot>&ndash;&gt;-->
+            <!--</configuration>-->
+          <!--</execution>-->
+
+            <!--<execution>-->
+                <!--<id>npm registry</id>-->
+                <!--<goals>-->
+                    <!--<goal>npm</goal>-->
+                <!--</goals>-->
+                <!--&lt;!&ndash; Optional configuration which provides for running any npm command &ndash;&gt;-->
+                <!--<configuration>-->
+                    <!--<arguments>&#45;&#45;registry http://registry.cnpmjs.org info express</arguments>-->
+                <!--</configuration>-->
+            <!--</execution>-->
+          <!--<execution>-->
+            <!--<id>npm install</id>-->
+            <!--<goals>-->
+              <!--<goal>npm</goal>-->
+            <!--</goals>-->
+            <!--&lt;!&ndash; Optional configuration which provides for running any npm command &ndash;&gt;-->
+            <!--<configuration>-->
+              <!--<arguments>install</arguments>-->
+            <!--</configuration>-->
+          <!--</execution>-->
+
+          <!--<execution>-->
+            <!--<id>npm webpack</id>-->
+            <!--<goals>-->
+              <!--<goal>npm</goal>-->
+            <!--</goals>-->
+            <!--&lt;!&ndash; Optional configuration which provides for running any npm command &ndash;&gt;-->
+            <!--<configuration>-->
+              <!--<arguments>run build</arguments>-->
+            <!--</configuration>-->
+          <!--</execution>-->
+        <!--</executions>-->
+      <!--</plugin>-->
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>2.6</version>
+        <configuration>
+          <!--<webappDirectory>src/main/webapp/assets</webappDirectory>-->
+          <!--设置打包路径 -->
+          <warSourceDirectory>build</warSourceDirectory>
+           <!-- <failOnMissingWebXml>false</failOnMissingWebXml> -->
+        </configuration>
+      </plugin>
+
+    </plugins>
+  </build>
+
+  <distributionManagement>
+    <repository>
+      <id>java-releases</id>
+      <name>ND java releases nexus mirror.</name>
+      <url>http://nexus.sdp.nd/nexus/content/repositories/java/</url>
+    </repository>
+    <snapshotRepository>
+      <id>java-snapshots</id>
+      <name>ND java snapshots nexus mirror.</name>
+      <url>http://nexus.sdp.nd/nexus/content/repositories/java_snapshot/</url>
+    </snapshotRepository>
+  </distributionManagement>
+</project>

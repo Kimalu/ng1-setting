@@ -1,0 +1,16 @@
+<div>
+	<div class="pagination-info" ng-hide="paginationInfo.tipHide">
+		<span>
+			{{i18nMessage.total}}{{paginationInfo.total}}{{i18nMessage.item}}
+		</span>
+		，
+		<span>
+			{{i18nMessage.perPage}}{{paginationInfo.pageSize}}{{i18nMessage.item}}
+		</span>
+	</div>
+	<div ng-show="paginationInfo.total" ng-change="pageChangedHandler(paginationInfo.page)" on-select-page="pageChangedHandler(paginationInfo.page)" uib-pagination boundary-links="true" max-size="maxSize" total-items="paginationInfo.total" page="paginationInfo.page" items-per-page="paginationInfo.pageSize" class="pagination" previous-text="&lsaquo;" next-text="&rsaquo;" first-text="&laquo;" last-text="&raquo;" ng-model="paginationInfo.page" ></div>
+	<span data-ng-show="paginationInfo.showPageGoto" style="padding-left: 15px;padding-right: 15px">
+		<input type="text" data-ng-model="pageGoto" class="form-control" bsz-number-range value-min="1" value-max="{{paginationInfo.totalPage}}" style="width: 40px; display: inline-block; padding-right: 5px">
+		<button class="btn btn-default" style="padding: 8px 8px;margin-left: 6px" data-ng-disabled="gotoPageBtnDisabled" data-ng-click="gotoPage()">GO</button>
+	</span>
+</div>

@@ -1,0 +1,13 @@
+<div bindonce>
+	<div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" data-ng-click="close(false)" aria-hidden="true">&times;</button>
+		<h5 class="modal-title">{{dialogTitle}}</h5>
+	</div>
+	<div class="modal-body">
+		<div ng-show="!loading" simple-form name="dialogForm" result="formData" options="formOptions" fields="formFields"></div>
+	</div>
+	<div class="modal-footer">
+		<button class="btn btn-primary" ng-disabled="dialogForm.$invalid" data-ng-click="doAction()" >确定</button>
+		<button class="btn btn-default" data-ng-click="close(false)" >取消</button>
+	</div>
+</div>

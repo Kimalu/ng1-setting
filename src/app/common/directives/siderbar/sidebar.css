@@ -1,0 +1,46 @@
+.al-layout-group {
+    left: 200px;
+}
+.js-siderbar {
+
+    /*height: 98%;*/
+    position: absolute;
+    left: 0;
+    background: #bfbfbf;    /*top: 10px;*/
+    width: 200px;
+    overflow: hidden;
+    padding: 0;
+}
+.js-siderbar li {
+    border-bottom: 1px solid #ddd;
+}
+.js-siderbar .js-border-top {
+    border-top: 1px solid #ddd;
+}
+.js-siderbar a {
+    padding: 0 40px;
+    position: relative;
+    padding: 0 8px 0 60px;
+    line-height: 36px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    outline: none;
+    display: block;
+    color: #333;
+    width: 100%;
+}
+.js-siderbar li:hover, .js-siderbar .js-active {
+    background: #E4E4E4;
+    color: #333;
+}
+.js-siderbar .icon-back {
+    float: left;    /* font-size: 12px; */
+    font-style: normal;
+    left: 0;
+    position: relative;
+    padding-right: 8px;
+}
+.js-siderbar a:hover .icon-back {
+    color: #59baf5;
+}

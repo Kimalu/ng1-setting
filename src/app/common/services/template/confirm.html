@@ -1,0 +1,13 @@
+<!-- dialog 提示弹窗 -->
+<div class="ext-modal-mask">
+    <div class="ext-modal-app">
+        <h3>{{ title }}</h3>
+        <a href="javascript:;" class="modal-close" data-ng-click="close(false)"></a>
+        <div class="modal-bd">
+            <p class="al-comfirm-txt" ng-bind-html="message | to_trusted"></p>
+        </div>
+        <div class="al-modal-ft">
+            <a href="javascript:;" class="ext-btn-default" ng-repeat="btn in buttons" ng-click="eventHandler(btn.result)" >{{btn.label}}</a>
+        </div>
+    </div>
+</div>
