@@ -7,7 +7,7 @@ ng1-setting 可以用来搭建后台配置站点，或者用于学习Angular（�
 
 ## 业务组件
 
--  `simple-form` [配置参数案例]('./src/app/list/model/user-defined-config.js')
+-  `simple-form` [配置参数案例](src/app/list/model/user-defined-config.js)
 
 ![参数图，未完整](src/assets/imgs/simpleGrid.png)
 
