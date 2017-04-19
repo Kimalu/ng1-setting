@@ -1,6 +1,6 @@
 # ng1-setting（配置列表）
 
-- 【ng1-setting（配置列表）】：这是一个 ng1 指令配置列表案例，前端基于Angular 1.4.0 + ng-Bootstrap。
+- 【ng1-setting（配置列表）】：这是一个 ng1 指令配置列表案例，前端基于Angular 1.4.0 + ng-Bootstrap+Es6。
 
 ng1-setting 可以用来搭建后台配置站点，或者用于学习Angular（其实我并不在乎你用来干嘛，那关我什么事呢对吧？）。
 
